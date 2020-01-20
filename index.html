@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>function f</title>
+</head>
+<body>
+  <script>
+    function f (a = 2, b = 3, c) {
+      function sum (a, b) {
+        return a + b;
+      }
+
+      if (typeof c === "function") {
+        return c();
+      } else {
+        return sum(a, b);
+      }
+    }
+  </script>
+</body>
+</html>
